@@ -1,4 +1,4 @@
 <template>
-    <div>This is a Vue component.</div>
+    <div>This is a Vue componendgffdlkgt.</div>
   </template>
   

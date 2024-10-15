@@ -1,14 +1,15 @@
- #!/bin/sh
+#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
 # Get the list of files that are being pushed
 files=$(git diff --cached --name-only)
 
-# Check if any of the files are .vue
-if echo "$files" | grep -qE '\.vue$ \.ts$'; then
-    echo "Error: Commit contains .vue files. Only .js files are allowed to be pushed."
+# Check if any of the files are .vue or .ts
+if echo "$files" | grep -qE '\.vue$|\.ts$'; then
+    echo "Error: Commit contains .vue or .ts files. Only .js files are allowed to be pushed."
     exit 1
 fi
 
 echo "All checks passed. Proceeding with push."
+
 
