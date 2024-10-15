@@ -1,8 +1,5 @@
-// src/test.js
-
 function sayHello() {
-    console.log('Hello, world!');
-    let x = 10
+    console.log('This is a console log that should trigger ESLint!');
   }
   
   sayHello();
