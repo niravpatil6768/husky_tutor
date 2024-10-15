@@ -1,7 +1,7 @@
 // src/test.js
 
 function sayHello() {
-    alert('Hello, world!');
+    console.log('Hello, world!');
     let x = 10
   }
   
