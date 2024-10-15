@@ -1,18 +1,20 @@
 module.exports = {
-    root: true,
-    env: {
-      node: true,
-    },
-    extends: [
-      'plugin:vue/essential', // Use essential rules from eslint-plugin-vue
-      'eslint:recommended', // Use recommended ESLint rules
-      'plugin:prettier/recommended', // Enable Prettier plugin
-    ],
-    parserOptions: {
-      parser: '@babel/eslint-parser',
-    },
-    rules: {
-      'prettier/prettier': ['error', { singleQuote: true, semi: false }],
-    },
+  env: {
+    browser: true,
+    es2021: true
+  },
+  extends: [
+    'plugin:vue/vue3-essential',
+    'eslint:recommended'
+  ],
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module'
+  },
+  rules: {
+    'no-console': 'error', // Disallow console logs
+    'comma-dangle': ['error', 'never'] // Disallow trailing commas
   }
+}
+
   

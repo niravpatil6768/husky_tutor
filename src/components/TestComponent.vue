@@ -9,7 +9,7 @@
   export default {
     name: 'TestComponent',
     mounted() {
-      console.log('TestComponent mounted'); // Intentional linting issue (no-console)
+      console.log('TestComponent mountedddd...'); // Intentional linting issue (no-console)
     },
     data() {
       return {
