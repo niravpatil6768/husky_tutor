@@ -27,12 +27,12 @@
     "prettier": "3.3.3"
   },
   "lint-staged": {
-  "src/**/*.{js,vue}": [
-    "eslint --fix",
-    "prettier --write",
-    "git add"
-  ]
-},
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
   "eslintConfig": {
     "root": true,
     "env": {
